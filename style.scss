@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+$ff-main:'Overpass', sans-serif;
+$fs-main: 15px;
+
+$orange: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$lightgrey: hsl(217, 12%, 63%);
+$mediumgrey: hsl(216, 12%, 54%);
+$darkblue: hsl(213, 19%, 18%);
+$verydarkblue: hsl(216, 12%, 8%);
+
+@mixin circle{
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background:$darkblue;
+    border-radius: 50%;
+}
+
+@mixin center-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+body{
+    background: $verydarkblue;
+    color: $lightgrey;
+    font-family: $ff-main;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container{
+    background: linear-gradient(to bottom, $darkblue,$verydarkblue);
+    padding: 2em;
+    border-radius: 30px;
+    min-width:327px;
+    max-width: 412px;
+}
+
+.star-container{
+    @include circle();
+    
+    
+
+    img{
+        @include center-content();
+    }
+}
+
+.card-text-container{
+    .card-title{
+        color: $white;
+    }
+
+    .card-text{
+        letter-spacing: 1px;
+        line-height: 1.5;
+    }
+}
+
+.card-ratings-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .rating-btn{
+        @include circle();
+
+        span{
+            @include center-content()
+        }
+
+        &:hover{
+            cursor: pointer;
+            background: $lightgrey;
+            color: $white;
+        }
+
+        &:active{
+            background: $orange;
+            color: $white;
+        }
+    }
+}
+
+.card-submit-btn{
+    margin-top: 2em;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    padding: 1em 0;
+    background: $orange;
+    color: $white;
+    font-family: $ff-main;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    &:hover{
+        cursor: pointer;
+        background: $white;
+        color: $orange;
+    }
+}

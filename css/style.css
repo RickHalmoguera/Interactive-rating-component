@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+body {
+  background: hsl(216deg, 12%, 8%);
+  color: hsl(217deg, 12%, 63%);
+  font-family: "Overpass", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  background: linear-gradient(to bottom, hsl(213deg, 19%, 18%), hsl(216deg, 12%, 8%));
+  padding: 2em;
+  border-radius: 30px;
+  min-width: 327px;
+  max-width: 412px;
+}
+
+.star-container {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  background: hsl(213deg, 19%, 18%);
+  border-radius: 50%;
+}
+.star-container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-text-container .card-title {
+  color: hsl(0deg, 0%, 100%);
+}
+.card-text-container .card-text {
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.card-ratings-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-ratings-container .rating-btn {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  background: hsl(213deg, 19%, 18%);
+  border-radius: 50%;
+}
+.card-ratings-container .rating-btn span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card-ratings-container .rating-btn:hover {
+  cursor: pointer;
+  background: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
+}
+.card-ratings-container .rating-btn:active {
+  background: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+
+.card-submit-btn {
+  margin-top: 2em;
+  width: 100%;
+  border: none;
+  border-radius: 30px;
+  padding: 1em 0;
+  background: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Overpass", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.card-submit-btn:hover {
+  cursor: pointer;
+  background: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+}/*# sourceMappingURL=style.css.map */
