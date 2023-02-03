@@ -40,8 +40,6 @@ const checkClick = (ratingClickedId)=>{
     switch (ratingClickedId) {
         case ratingClickedId ="btn-1":
             rating = 1
-            circleClicked.style.backgroundColor = "hsl(25, 97%, 53%)"
-            circleClicked.style.color = "hsl(0, 0%, 100%)"
             break;
         
         case ratingClickedId ="btn-2":
