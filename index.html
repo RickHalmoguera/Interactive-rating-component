@@ -9,35 +9,37 @@
     <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
-    <main class="card-container">
-        <div class="star-container">
-            <img src="./images/icon-star.svg" alt="star">
-        </div>
-        <div class="card-text-container">
-            <h1 class="card-title">How did we do?</h1>
-            <p class="card-text">Please let us know how we did with your support request. 
-                All feedback is appreciated to help us improve our offering!</p>
-        </div>
-        <div class="card-ratings-container">
-            <div class="rating-btn" id="btn-1">
-                <span>1</span> 
+    <main id="card">
+        <div class="card-container">
+            <div class="star-container">
+                <img src="./images/icon-star.svg" alt="star">
             </div>
-            <div class="rating-btn" id="btn-2">
-                <span>2</span> 
+            <div class="card-text-container">
+                <h1 class="card-title">How did we do?</h1>
+                <p class="card-text">Please let us know how we did with your support request. 
+                    All feedback is appreciated to help us improve our offering!</p>
             </div>
-            <div class="rating-btn" id="btn-3">
-                <span>3</span> 
+            <div class="card-ratings-container">
+                <button class="rating-btn" id="btn-1">
+                    1 
+                </button>
+                <button class="rating-btn" id="btn-2">
+                    2
+                </button>
+                <button class="rating-btn" id="btn-3">
+                    3
+                </button>
+                <button class="rating-btn" id="btn-4">
+                    4
+                </button>
+                <button class="rating-btn" id="btn-5">
+                    5
+                </button>
             </div>
-            <div class="rating-btn" id="btn-4">
-                <span>4</span> 
-            </div>
-            <div class="rating-btn" id="btn-5">
-                <span>5</span> 
-            </div>
-        </div>
 
-        <button class="card-submit-btn">submit</button>
-
+            <button class="card-submit-btn" id="submit">submit</button>
+        </div>
     </main>
 </body>
+<script src="./js/index.js"></script>
 </html>

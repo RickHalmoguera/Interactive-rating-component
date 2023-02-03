@@ -3,6 +3,7 @@
 $ff-main:'Overpass', sans-serif;
 $fs-main: 15px;
 
+
 $orange: hsl(25, 97%, 53%);
 $white: hsl(0, 0%, 100%);
 $lightgrey: hsl(217, 12%, 63%);
@@ -24,6 +25,23 @@ $verydarkblue: hsl(216, 12%, 8%);
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@mixin card-centered{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, $darkblue,$verydarkblue);
+    padding: 2em;
+    border-radius: 30px;
+    min-width:327px;
+    max-width: 412px;
+    height: 360px
+}
+
+*{
+    margin: 0;
+}
+
 body{
     background: $verydarkblue;
     color: $lightgrey;
@@ -35,11 +53,7 @@ body{
 }
 
 .card-container{
-    background: linear-gradient(to bottom, $darkblue,$verydarkblue);
-    padding: 2em;
-    border-radius: 30px;
-    min-width:327px;
-    max-width: 412px;
+    @include card-centered();
 }
 
 .star-container{
@@ -55,6 +69,7 @@ body{
 .card-text-container{
     .card-title{
         color: $white;
+        margin-bottom: .5em;
     }
 
     .card-text{
@@ -70,6 +85,8 @@ body{
 
     .rating-btn{
         @include circle();
+        border: none;
+        color: $white;
 
         span{
             @include center-content()
@@ -89,7 +106,7 @@ body{
 }
 
 .card-submit-btn{
-    margin-top: 2em;
+    
     width: 100%;
     border: none;
     border-radius: 30px;
@@ -105,5 +122,19 @@ body{
         cursor: pointer;
         background: $white;
         color: $orange;
+    }
+}
+
+.centered-card{
+    @include card-centered();
+    align-items: center;
+    text-align: center;
+
+    .your-selection-container{
+        background-color: $darkblue;
+        padding: .5em 1.2em;
+        border-radius: 30px;
+        color: $orange;
+
     }
 }
