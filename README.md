@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/responsive-product-preview-card-component-with-html-ans-scss-CEZp-fL2tK]
-- Live Site URL: [https://rickhalmoguera.github.io/product_preview-card-component/]
+- [Solution URL](https://www.frontendmentor.io/solutions/responsive-product-preview-card-component-with-html-ans-scss-CEZp-fL2tK)
+- [Live Site URL](https://rickhalmoguera.github.io/product_preview-card-component/)
 
 ## My process
 
